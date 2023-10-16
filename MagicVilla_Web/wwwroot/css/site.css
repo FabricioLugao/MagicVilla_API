@@ -17,6 +17,25 @@ html {
   min-height: 100%;
 }
 
+html, body {
+    height: 100%;
+    background-color: rgba(243,244,245);
+}
+
+main {
+    height: calc(100% - 57px);
+    display: flow-root;
+}
+
+.w-actions {
+    width: 120px;
+}
+
+table td {
+    vertical-align: middle;
+}
+
+/*
 body {
   margin-bottom: 60px;
-}
+}*/

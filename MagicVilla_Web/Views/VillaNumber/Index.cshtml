@@ -1,9 +1,9 @@
 ﻿@model IEnumerable<MagicVilla_Web.Models.Dto.VillaNumberDTO>
 
-<div class="container p-4 border">
+<div class="container bg-white rounded shadow p-4 mt-4">
     <div class="row pb-2">
         <div class="col">
-            <h1 class="text-primaty">Villa Number List</h1>
+            <h1 class="text-primary">Villa Number List</h1>
         </div>
         <div class="col text-end pt-1">
             <a asp-controller="VillaNumber" asp-action="Create" class="btn btn-outline-primary">
@@ -12,12 +12,12 @@
         </div>
     </div>
 
-    <table class="table">
+    <table class="table table-hover">
         <thead>
             <tr>
                 <th>Villa Name</th>
                 <th>Villa Number</th>
-                <th></th>
+                <th class="w-actions text-center">Actions</th>
             </tr>
         </thead>
         <tbody>
@@ -26,7 +26,7 @@
                 <tr>
                     <td>@item.Villa.Name</td>
                     <td>@item.VillaNo</td>
-                    <td>
+                    <td class="text-center">
                         <a asp-controller="VillaNumber" asp-action="Update" asp-route-villaNo="@item.VillaNo" class="btn btn-outline-success">
                             <i class="bi bi-pencil-square"></i>
                         </a>

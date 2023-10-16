@@ -63,6 +63,7 @@ namespace MagicVilla_VillaAPI.Controllers
                     _logger.LogError("Get villaNumber error with id " + id);
 
                     _response.StatusCode = HttpStatusCode.BadRequest;
+                    _response.IsSuccess = false;
                     return BadRequest(_response);
                 }
 
@@ -71,6 +72,7 @@ namespace MagicVilla_VillaAPI.Controllers
                 if (villaNumber == null)
                 {
                     _response.StatusCode = HttpStatusCode.NotFound;
+                    _response.IsSuccess = false;
                     return NotFound(_response);
                 }
 
