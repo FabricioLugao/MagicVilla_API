@@ -35,6 +35,10 @@ table td {
     vertical-align: middle;
 }
 
+.container.login {
+    max-width: 500px;
+}
+
 /*
 body {
   margin-bottom: 60px;
